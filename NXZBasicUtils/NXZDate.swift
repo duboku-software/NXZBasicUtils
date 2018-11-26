@@ -9,9 +9,22 @@
 import Foundation
 
 public class NXZDate {
-    public static func getAge(year:String) -> String {
-        let index = year.index(year.startIndex, offsetBy: 2)
-        return String(year[...index])
+    public static func getAge(yyyyMMdd:String) -> Int {
+        let age = 0
+        
+        let date = Date()
+        
+        let cal = Calendar(identifier: .gregorian)
+        print(cal.dateComponents([.day, .month], from: date))
+        
+        var dateCom = DateComponents()
+        dateCom.year = 1998
+        
+        if let o = cal.date(from: dateCom) {
+            print(o)
+        }
+        
+        return age
     }
     
     public static func getAge2() {
@@ -19,6 +32,6 @@ public class NXZDate {
     }
     
     public static func getAge3() {
-        print("OKOKOK")
+        print("OKOKOK2")
     }
 }
