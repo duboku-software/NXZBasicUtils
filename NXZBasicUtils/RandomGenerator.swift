@@ -8,19 +8,13 @@
 
 import Foundation
 
-public class RandomGenerator {
+public class RandomGenerator : NSObject {
     
-    private init() {}
-    
-    public static func string() -> String {
+    @objc public static func string() -> String {
         return UUID().uuidString
     }
     
     public static func integer() -> Int {
         return Int(arc4random())
-    }
-    
-    public static func ok() {
-        
     }
 }

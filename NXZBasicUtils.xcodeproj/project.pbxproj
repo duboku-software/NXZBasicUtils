@@ -11,6 +11,8 @@
 		636F0971215A76520098E82D /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F096F215A76520098E82D /* RandomGenerator.swift */; };
 		636F0972215A76520098E82D /* NXZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F0970215A76520098E82D /* NXZDevice.swift */; };
 		B99D2BCC21ABAD9F00361243 /* NXZDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99D2BCB21ABAD9F00361243 /* NXZDate.swift */; };
+		B9F9ECA221ABE22300C57D30 /* NXZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F9ECA121ABE22300C57D30 /* NXZString.swift */; };
+		B9F9ECA421ABE53E00C57D30 /* AES256.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F9ECA321ABE53E00C57D30 /* AES256.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		636F096F215A76520098E82D /* RandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
 		636F0970215A76520098E82D /* NXZDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXZDevice.swift; sourceTree = "<group>"; };
 		B99D2BCB21ABAD9F00361243 /* NXZDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXZDate.swift; sourceTree = "<group>"; };
+		B9F9ECA121ABE22300C57D30 /* NXZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXZString.swift; sourceTree = "<group>"; };
+		B9F9ECA321ABE53E00C57D30 /* AES256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				636F0967215A76440098E82D /* NXZBasicUtils.h */,
 				636F0968215A76440098E82D /* Info.plist */,
 				B99D2BCB21ABAD9F00361243 /* NXZDate.swift */,
+				B9F9ECA121ABE22300C57D30 /* NXZString.swift */,
+				B9F9ECA321ABE53E00C57D30 /* AES256.swift */,
 			);
 			path = NXZBasicUtils;
 			sourceTree = "<group>";
@@ -104,6 +110,7 @@
 				TargetAttributes = {
 					636F0963215A76440098E82D = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -139,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F9ECA421ABE53E00C57D30 /* AES256.swift in Sources */,
 				636F0971215A76520098E82D /* RandomGenerator.swift in Sources */,
+				B9F9ECA221ABE22300C57D30 /* NXZString.swift in Sources */,
 				636F0972215A76520098E82D /* NXZDevice.swift in Sources */,
 				B99D2BCC21ABAD9F00361243 /* NXZDate.swift in Sources */,
 			);
@@ -273,6 +282,7 @@
 		636F096D215A76440098E82D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -290,6 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.comcxx11.NXZBasicUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +309,7 @@
 		636F096E215A76440098E82D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
