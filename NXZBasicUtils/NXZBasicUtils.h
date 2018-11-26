@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double NXZBasicUtilsVersionNumber;
 FOUNDATION_EXPORT const unsigned char NXZBasicUtilsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <NXZBasicUtils/PublicHeader.h>
-
-
